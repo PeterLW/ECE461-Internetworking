@@ -1,0 +1,990 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    00:1c:58:6a:23:29     01:00:0c:cc:cc:cc     CDP      Device ID: Router4  Port ID: FastEthernet0/1  
+
+Frame 1 (342 bytes on wire, 342 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:05.850403000
+    [Time delta from previous packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Packet Length: 342 bytes
+    Capture Length: 342 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:llc:cdp:data]
+    [Coloring Rule Name: Routing]
+    [Coloring Rule String: hsrp || eigrp || ospf || bgp || cdp || vrrp || gvrp || igmp || ismp]
+IEEE 802.3 Ethernet 
+    Destination: 01:00:0c:cc:cc:cc (01:00:0c:cc:cc:cc)
+        Address: 01:00:0c:cc:cc:cc (01:00:0c:cc:cc:cc)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        Address: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Length: 328
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+    IG Bit: Individual
+    SSAP: SNAP (0xaa)
+    CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x03)
+    Organization Code: Cisco (0x00000c)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x6f43 [correct]
+        [Good: True]
+        [Bad : False]
+    Device ID: Router4
+        Type: Device ID (0x0001)
+        Length: 11
+        Device ID: Router4
+    Software Version
+        Type: Software version (0x0005)
+        Length: 238
+        Software Version: Cisco IOS Software, 2800 Software (C2800NM-IPBASE-M), Version 12.4(3g), RELEASE SOFTWARE (fc2)
+                          Technical Support: http://www.cisco.com/techsupport
+                          Copyright (c) 1986-2006 by Cisco Systems, Inc.
+                          Compiled Mon 06-Nov-06 02:36 by alnguyen
+    Platform: Cisco 2811
+        Type: Platform (0x0006)
+        Length: 14
+        Platform: Cisco 2811
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.0.2.4
+            Protocol type: NLPID
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP address: 10.0.2.4
+    Port ID: FastEthernet0/1
+        Type: Port ID (0x0003)
+        Length: 19
+        Sent through Interface: FastEthernet0/1
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000029
+            .... .... .... .... .... .... .... ...1 = Is  a Router
+            .... .... .... .... .... .... .... ..0. = Not a Transparent Bridge
+            .... .... .... .... .... .... .... .0.. = Not a Source Route Bridge
+            .... .... .... .... .... .... .... 1... = Is  a Switch
+            .... .... .... .... .... .... ...0 .... = Not a Host
+            .... .... .... .... .... .... ..1. .... = Is  IGMP capable
+            .... .... .... .... .... .... .0.. .... = Not a Repeater
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Duplex: Half
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Half
+
+No.     Time        Source                Destination           Protocol Info
+      2 0.266770    10.0.2.1              224.0.0.5             OSPF     Hello Packet
+
+Frame 2 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:06.117173000
+    [Time delta from previous packet: 0.266770000 seconds]
+    [Time since reference or first frame: 0.266770000 seconds]
+    Frame Number: 2
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        Address: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.1 (10.0.2.1), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x0236 (566)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xca55 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.1 (10.0.2.1)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.2.1 (10.0.2.1)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      3 1.467527    10.0.2.4              224.0.0.5             OSPF     Hello Packet
+
+Frame 3 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:07.317930000
+    [Time delta from previous packet: 1.467527000 seconds]
+    [Time since reference or first frame: 1.467527000 seconds]
+    Frame Number: 3
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        Address: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.4 (10.0.2.4), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01aa (426)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcade [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.4 (10.0.2.4)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.7.8 (10.0.7.8)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      4 3.934291    10.0.2.2              224.0.0.5             OSPF     Hello Packet
+
+Frame 4 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:09.784694000
+    [Time delta from previous packet: 3.934291000 seconds]
+    [Time since reference or first frame: 3.934291000 seconds]
+    Frame Number: 4
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:37:09 (00:1c:58:45:37:09), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:37:09 (00:1c:58:45:37:09)
+        Address: 00:1c:58:45:37:09 (00:1c:58:45:37:09)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.2 (10.0.2.2), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01cd (461)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcabd [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.2 (10.0.2.2)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.3.2 (10.0.3.2)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      5 10.265579   10.0.2.1              224.0.0.5             OSPF     Hello Packet
+
+Frame 5 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:16.115982000
+    [Time delta from previous packet: 10.265579000 seconds]
+    [Time since reference or first frame: 10.265579000 seconds]
+    Frame Number: 5
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        Address: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.1 (10.0.2.1), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x0238 (568)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xca53 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.1 (10.0.2.1)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.2.1 (10.0.2.1)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      6 11.466484   10.0.2.4              224.0.0.5             OSPF     Hello Packet
+
+Frame 6 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:17.316887000
+    [Time delta from previous packet: 11.466484000 seconds]
+    [Time since reference or first frame: 11.466484000 seconds]
+    Frame Number: 6
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        Address: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.4 (10.0.2.4), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01ad (429)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcadb [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.4 (10.0.2.4)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.7.8 (10.0.7.8)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      7 13.933181   10.0.2.2              224.0.0.5             OSPF     Hello Packet
+
+Frame 7 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:19.783584000
+    [Time delta from previous packet: 13.933181000 seconds]
+    [Time since reference or first frame: 13.933181000 seconds]
+    Frame Number: 7
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:37:09 (00:1c:58:45:37:09), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:37:09 (00:1c:58:45:37:09)
+        Address: 00:1c:58:45:37:09 (00:1c:58:45:37:09)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.2 (10.0.2.2), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01cf (463)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcabb [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.2 (10.0.2.2)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.3.2 (10.0.3.2)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      8 20.264383   10.0.2.1              224.0.0.5             OSPF     Hello Packet
+
+Frame 8 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:26.114786000
+    [Time delta from previous packet: 20.264383000 seconds]
+    [Time since reference or first frame: 20.264383000 seconds]
+    Frame Number: 8
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        Address: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.1 (10.0.2.1), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x023a (570)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xca51 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.1 (10.0.2.1)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.2.1 (10.0.2.1)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+      9 21.465444   10.0.2.4              224.0.0.5             OSPF     Hello Packet
+
+Frame 9 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:27.315847000
+    [Time delta from previous packet: 21.465444000 seconds]
+    [Time since reference or first frame: 21.465444000 seconds]
+    Frame Number: 9
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        Address: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.4 (10.0.2.4), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01b1 (433)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcad7 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.4 (10.0.2.4)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.7.8 (10.0.7.8)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+     10 23.932068   10.0.2.2              224.0.0.5             OSPF     Hello Packet
+
+Frame 10 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:29.782471000
+    [Time delta from previous packet: 23.932068000 seconds]
+    [Time since reference or first frame: 23.932068000 seconds]
+    Frame Number: 10
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:37:09 (00:1c:58:45:37:09), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:37:09 (00:1c:58:45:37:09)
+        Address: 00:1c:58:45:37:09 (00:1c:58:45:37:09)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.2 (10.0.2.2), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01d1 (465)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcab9 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.2 (10.0.2.2)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.3.2 (10.0.3.2)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+     11 30.263197   10.0.2.1              224.0.0.5             OSPF     Hello Packet
+
+Frame 11 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:36.113600000
+    [Time delta from previous packet: 30.263197000 seconds]
+    [Time since reference or first frame: 30.263197000 seconds]
+    Frame Number: 11
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        Address: 00:1c:58:45:33:c1 (00:1c:58:45:33:c1)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.1 (10.0.2.1), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x023c (572)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xca4f [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.1 (10.0.2.1)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.2.1 (10.0.2.1)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+        Active Neighbor: 10.0.7.8
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET
+
+No.     Time        Source                Destination           Protocol Info
+     12 31.464402   10.0.2.4              224.0.0.5             OSPF     Hello Packet
+
+Frame 12 (98 bytes on wire, 98 bytes captured)
+    Arrival Time: Jun 27, 2007 21:37:37.314805000
+    [Time delta from previous packet: 31.464402000 seconds]
+    [Time since reference or first frame: 31.464402000 seconds]
+    Frame Number: 12
+    Packet Length: 98 bytes
+    Capture Length: 98 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:ospf]
+    [Coloring Rule Name: Low TTL]
+    [Coloring Rule String: ip.ttl < 5]
+Ethernet II, Src: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29), Dst: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+    Destination: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        Address: 01:00:5e:00:00:05 (01:00:5e:00:00:05)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        Address: 00:1c:58:6a:23:29 (00:1c:58:6a:23:29)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.2.4 (10.0.2.4), Dst: 224.0.0.5 (224.0.0.5)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00)
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 84
+    Identification: 0x01b3 (435)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+    Protocol: OSPF IGP (0x59)
+    Header checksum: 0xcad5 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.2.4 (10.0.2.4)
+    Destination: 224.0.0.5 (224.0.0.5)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: Hello Packet (1)
+        Packet Length: 52
+        Source OSPF Router: 10.0.7.8 (10.0.7.8)
+        Area ID: 0.0.0.1
+        Packet Checksum: 0xaa87 [correct]
+        Auth Type: Null
+        Auth Data (none)
+    OSPF Hello Packet
+        Network Mask: 255.255.255.0
+        Hello Interval: 10 seconds
+        Options: 0x12 (L, E)
+            0... .... = DN: DN-bit is NOT set
+            .0.. .... = O: O-bit is NOT set
+            ..0. .... = DC: Demand circuits are NOT supported
+            ...1 .... = L: The packet contains LLS data block
+            .... 0... = NP: Nssa is NOT supported
+            .... .0.. = MC: NOT multicast capable
+            .... ..1. = E: ExternalRoutingCapability
+        Router Priority: 1
+        Router Dead Interval: 40 seconds
+        Designated Router: 10.0.2.2
+        Backup Designated Router: 10.0.2.1
+        Active Neighbor: 10.0.2.1
+        Active Neighbor: 10.0.3.2
+    OSPF LLS Data Block
+        Checksum: 0xfff6
+        LLS Data Length: 12 bytes
+        Extended options TLV
+            Type: 1
+            Length: 4
+            Options: 0x00000001 (LR)
+                .... .... .... .... .... .... .... ..0. = RS: Restart Signal (RS-bit) is NOT set
+                .... .... .... .... .... .... .... ...1 = LR: LSDB Resynchrinization (LR-bit) is SET

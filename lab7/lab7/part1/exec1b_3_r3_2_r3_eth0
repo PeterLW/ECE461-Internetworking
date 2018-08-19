@@ -1,0 +1,181 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    00:1c:58:68:eb:88     CDP/VTP/DTP/PAgP/UDLD CDP      Device ID: Router2  Port ID: FastEthernet0/0  
+
+Frame 1 (351 bytes on wire, 351 bytes captured)
+    Arrival Time: Aug  6, 2007 01:22:06.611460000
+    [Time delta from previous packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Packet Length: 351 bytes
+    Capture Length: 351 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:llc:cdp:data]
+    [Coloring Rule Name: Routing]
+    [Coloring Rule String: hsrp || eigrp || ospf || bgp || cdp || vrrp || gvrp || igmp || ismp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Length: 337
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+    IG Bit: Individual
+    SSAP: SNAP (0xaa)
+    CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x03)
+    Organization Code: Cisco (0x00000c)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0xbc89 [correct]
+        [Good: True]
+        [Bad : False]
+    Device ID: Router2
+        Type: Device ID (0x0001)
+        Length: 11
+        Device ID: Router2
+    Software Version
+        Type: Software version (0x0005)
+        Length: 238
+        Software Version: Cisco IOS Software, 2800 Software (C2800NM-IPBASE-M), Version 12.4(3g), RELEASE SOFTWARE (fc2)
+                          Technical Support: http://www.cisco.com/techsupport
+                          Copyright (c) 1986-2006 by Cisco Systems, Inc.
+                          Compiled Mon 06-Nov-06 02:36 by alnguyen
+    Platform: Cisco 2811
+        Type: Platform (0x0006)
+        Length: 14
+        Platform: Cisco 2811
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.0.1.1
+            Protocol type: NLPID
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP address: 10.0.1.1
+    Port ID: FastEthernet0/0
+        Type: Port ID (0x0003)
+        Length: 19
+        Sent through Interface: FastEthernet0/0
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000029
+            .... .... .... .... .... .... .... ...1 = Is  a Router
+            .... .... .... .... .... .... .... ..0. = Not a Transparent Bridge
+            .... .... .... .... .... .... .... .0.. = Not a Source Route Bridge
+            .... .... .... .... .... .... .... 1... = Is  a Switch
+            .... .... .... .... .... .... ...0 .... = Not a Host
+            .... .... .... .... .... .... ..1. .... = Is  IGMP capable
+            .... .... .... .... .... .... .0.. .... = Not a Repeater
+    IP Prefixes: 1
+        Type: IP Prefix/Gateway (used for ODR) (0x0007)
+        Length: 9
+        IP Prefix = 128.195.7.0/24
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Duplex: Half
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Half
+
+No.     Time        Source                Destination           Protocol Info
+      2 0.057024    00:1c:58:7d:ff:f0     CDP/VTP/DTP/PAgP/UDLD CDP      Device ID: Router3  Port ID: FastEthernet0/0  
+
+Frame 2 (342 bytes on wire, 342 bytes captured)
+    Arrival Time: Aug  6, 2007 01:22:06.668484000
+    [Time delta from previous packet: 0.057024000 seconds]
+    [Time since reference or first frame: 0.057024000 seconds]
+    Frame Number: 2
+    Packet Length: 342 bytes
+    Capture Length: 342 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:llc:cdp:data]
+    [Coloring Rule Name: Routing]
+    [Coloring Rule String: hsrp || eigrp || ospf || bgp || cdp || vrrp || gvrp || igmp || ismp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:7d:ff:f0 (00:1c:58:7d:ff:f0)
+        Address: 00:1c:58:7d:ff:f0 (00:1c:58:7d:ff:f0)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Length: 328
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+    IG Bit: Individual
+    SSAP: SNAP (0xaa)
+    CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x03)
+    Organization Code: Cisco (0x00000c)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x7244 [correct]
+        [Good: True]
+        [Bad : False]
+    Device ID: Router3
+        Type: Device ID (0x0001)
+        Length: 11
+        Device ID: Router3
+    Software Version
+        Type: Software version (0x0005)
+        Length: 238
+        Software Version: Cisco IOS Software, 2800 Software (C2800NM-IPBASE-M), Version 12.4(3g), RELEASE SOFTWARE (fc2)
+                          Technical Support: http://www.cisco.com/techsupport
+                          Copyright (c) 1986-2006 by Cisco Systems, Inc.
+                          Compiled Mon 06-Nov-06 02:36 by alnguyen
+    Platform: Cisco 2811
+        Type: Platform (0x0006)
+        Length: 14
+        Platform: Cisco 2811
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.0.1.3
+            Protocol type: NLPID
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP address: 10.0.1.3
+    Port ID: FastEthernet0/0
+        Type: Port ID (0x0003)
+        Length: 19
+        Sent through Interface: FastEthernet0/0
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000029
+            .... .... .... .... .... .... .... ...1 = Is  a Router
+            .... .... .... .... .... .... .... ..0. = Not a Transparent Bridge
+            .... .... .... .... .... .... .... .0.. = Not a Source Route Bridge
+            .... .... .... .... .... .... .... 1... = Is  a Switch
+            .... .... .... .... .... .... ...0 .... = Not a Host
+            .... .... .... .... .... .... ..1. .... = Is  IGMP capable
+            .... .... .... .... .... .... .0.. .... = Not a Repeater
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Duplex: Half
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Half

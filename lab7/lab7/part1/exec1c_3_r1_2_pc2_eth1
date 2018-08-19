@@ -1,0 +1,731 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    00:04:5a:7a:c6:6f     ff:ff:ff:ff:ff:ff     ARP      Who has 128.143.136.1?  Tell 128.143.136.22
+
+Frame 1 (42 bytes on wire, 42 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.701114000
+    [Time delta from previous packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Packet Length: 42 bytes
+    Capture Length: 42 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: ff:ff:ff:ff:ff:ff (ff:ff:ff:ff:ff:ff)
+    Destination: ff:ff:ff:ff:ff:ff (ff:ff:ff:ff:ff:ff)
+        Address: ff:ff:ff:ff:ff:ff (ff:ff:ff:ff:ff:ff)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: ARP (0x0806)
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (0x0001)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (0x0001)
+    Sender MAC address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Sender IP address: 128.143.136.22 (128.143.136.22)
+    Target MAC address: 00:00:00:00:00:00 (00:00:00:00:00:00)
+    Target IP address: 128.143.136.1 (128.143.136.1)
+
+No.     Time        Source                Destination           Protocol Info
+      2 0.000065    00:04:5a:7b:21:cc     00:04:5a:7a:c6:6f     ARP      128.143.136.1 is at 00:04:5a:7b:21:cc
+
+Frame 2 (60 bytes on wire, 60 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.701179000
+    [Time delta from previous packet: 0.000065000 seconds]
+    [Time since reference or first frame: 0.000065000 seconds]
+    Frame Number: 2
+    Packet Length: 60 bytes
+    Capture Length: 60 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: ARP (0x0806)
+    Trailer: 000000000000000000000000000000000000
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (0x0001)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (0x0002)
+    Sender MAC address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Sender IP address: 128.143.136.1 (128.143.136.1)
+    Target MAC address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Target IP address: 128.143.136.22 (128.143.136.22)
+
+No.     Time        Source                Destination           Protocol Info
+      3 0.000082    128.143.136.22        128.143.136.1         ICMP     Echo (ping) request
+
+Frame 3 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.701196000
+    [Time delta from previous packet: 0.000017000 seconds]
+    [Time since reference or first frame: 0.000082000 seconds]
+    Frame Number: 3
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Destination: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 128.143.136.1 (128.143.136.1)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x0005 (5)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 254
+    Protocol: ICMP (0x01)
+    Header checksum: 0xab5d [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 128.143.136.1 (128.143.136.1)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0 
+    Checksum: 0x6310 [correct]
+    Identifier: 0x0001
+    Sequence number: 0 (0x0000)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a e4 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      4 0.000145    128.143.136.1         128.143.136.22        ICMP     Echo (ping) reply
+
+Frame 4 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.701259000
+    [Time delta from previous packet: 0.000063000 seconds]
+    [Time since reference or first frame: 0.000145000 seconds]
+    Frame Number: 4
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.1 (128.143.136.1), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x748c (29836)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (0x01)
+    Header checksum: 0xf4d6 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.1 (128.143.136.1)
+    Destination: 128.143.136.22 (128.143.136.22)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0 
+    Checksum: 0x6b10 [correct]
+    Identifier: 0x0001
+    Sequence number: 0 (0x0000)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a e4 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      5 0.005325    128.143.136.22        128.143.136.1         ICMP     Echo (ping) request
+
+Frame 5 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.706439000
+    [Time delta from previous packet: 0.005180000 seconds]
+    [Time since reference or first frame: 0.005325000 seconds]
+    Frame Number: 5
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Destination: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 128.143.136.1 (128.143.136.1)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x0006 (6)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 254
+    Protocol: ICMP (0x01)
+    Header checksum: 0xab5c [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 128.143.136.1 (128.143.136.1)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0 
+    Checksum: 0x6303 [correct]
+    Identifier: 0x0001
+    Sequence number: 1 (0x0001)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      6 0.005377    128.143.136.1         128.143.136.22        ICMP     Echo (ping) reply
+
+Frame 6 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.706491000
+    [Time delta from previous packet: 0.000052000 seconds]
+    [Time since reference or first frame: 0.005377000 seconds]
+    Frame Number: 6
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.1 (128.143.136.1), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x748d (29837)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (0x01)
+    Header checksum: 0xf4d5 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.1 (128.143.136.1)
+    Destination: 128.143.136.22 (128.143.136.22)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0 
+    Checksum: 0x6b03 [correct]
+    Identifier: 0x0001
+    Sequence number: 1 (0x0001)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      7 0.006095    128.143.136.22        128.143.136.1         ICMP     Echo (ping) request
+
+Frame 7 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.707209000
+    [Time delta from previous packet: 0.000718000 seconds]
+    [Time since reference or first frame: 0.006095000 seconds]
+    Frame Number: 7
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Destination: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 128.143.136.1 (128.143.136.1)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x0007 (7)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 254
+    Protocol: ICMP (0x01)
+    Header checksum: 0xab5b [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 128.143.136.1 (128.143.136.1)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0 
+    Checksum: 0x6302 [correct]
+    Identifier: 0x0001
+    Sequence number: 2 (0x0002)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      8 0.006146    128.143.136.1         128.143.136.22        ICMP     Echo (ping) reply
+
+Frame 8 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.707260000
+    [Time delta from previous packet: 0.000051000 seconds]
+    [Time since reference or first frame: 0.006146000 seconds]
+    Frame Number: 8
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.1 (128.143.136.1), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x748e (29838)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (0x01)
+    Header checksum: 0xf4d4 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.1 (128.143.136.1)
+    Destination: 128.143.136.22 (128.143.136.22)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0 
+    Checksum: 0x6b02 [correct]
+    Identifier: 0x0001
+    Sequence number: 2 (0x0002)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      9 0.006868    128.143.136.22        128.143.136.1         ICMP     Echo (ping) request
+
+Frame 9 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.707982000
+    [Time delta from previous packet: 0.000722000 seconds]
+    [Time since reference or first frame: 0.006868000 seconds]
+    Frame Number: 9
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Destination: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 128.143.136.1 (128.143.136.1)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x0008 (8)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 254
+    Protocol: ICMP (0x01)
+    Header checksum: 0xab5a [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 128.143.136.1 (128.143.136.1)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0 
+    Checksum: 0x6301 [correct]
+    Identifier: 0x0001
+    Sequence number: 3 (0x0003)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+     10 0.006919    128.143.136.1         128.143.136.22        ICMP     Echo (ping) reply
+
+Frame 10 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.708033000
+    [Time delta from previous packet: 0.000051000 seconds]
+    [Time since reference or first frame: 0.006919000 seconds]
+    Frame Number: 10
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.1 (128.143.136.1), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x748f (29839)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (0x01)
+    Header checksum: 0xf4d3 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.1 (128.143.136.1)
+    Destination: 128.143.136.22 (128.143.136.22)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0 
+    Checksum: 0x6b01 [correct]
+    Identifier: 0x0001
+    Sequence number: 3 (0x0003)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+     11 0.007641    128.143.136.22        128.143.136.1         ICMP     Echo (ping) request
+
+Frame 11 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.708755000
+    [Time delta from previous packet: 0.000722000 seconds]
+    [Time since reference or first frame: 0.007641000 seconds]
+    Frame Number: 11
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Destination: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 128.143.136.1 (128.143.136.1)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x0009 (9)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 254
+    Protocol: ICMP (0x01)
+    Header checksum: 0xab59 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 128.143.136.1 (128.143.136.1)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0 
+    Checksum: 0x6300 [correct]
+    Identifier: 0x0001
+    Sequence number: 4 (0x0004)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+     12 0.007692    128.143.136.1         128.143.136.22        ICMP     Echo (ping) reply
+
+Frame 12 (114 bytes on wire, 114 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:52.708806000
+    [Time delta from previous packet: 0.000051000 seconds]
+    [Time since reference or first frame: 0.007692000 seconds]
+    Frame Number: 12
+    Packet Length: 114 bytes
+    Capture Length: 114 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.1 (128.143.136.1), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 100
+    Identification: 0x7490 (29840)
+    Flags: 0x00
+        0... = Reserved bit: Not set
+        .0.. = Don't fragment: Not set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (0x01)
+    Header checksum: 0xf4d2 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.1 (128.143.136.1)
+    Destination: 128.143.136.22 (128.143.136.22)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0 
+    Checksum: 0x6b00 [correct]
+    Identifier: 0x0001
+    Sequence number: 4 (0x0004)
+    Data (72 bytes)
+
+0000  00 00 00 00 00 55 1a f0 ab cd ab cd ab cd ab cd   .....U..........
+0010  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0020  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0030  ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd   ................
+0040  ab cd ab cd ab cd ab cd                           ........
+
+No.     Time        Source                Destination           Protocol Info
+     13 4.999596    00:04:5a:7b:21:cc     00:04:5a:7a:c6:6f     ARP      Who has 128.143.136.22?  Tell 128.143.136.1
+
+Frame 13 (60 bytes on wire, 60 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:57.700710000
+    [Time delta from previous packet: 4.991904000 seconds]
+    [Time since reference or first frame: 4.999596000 seconds]
+    Frame Number: 13
+    Packet Length: 60 bytes
+    Capture Length: 60 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc), Dst: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Destination: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: ARP (0x0806)
+    Trailer: 000000000000000000000000000000000000
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (0x0001)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (0x0001)
+    Sender MAC address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Sender IP address: 128.143.136.1 (128.143.136.1)
+    Target MAC address: 00:00:00:00:00:00 (00:00:00:00:00:00)
+    Target IP address: 128.143.136.22 (128.143.136.22)
+
+No.     Time        Source                Destination           Protocol Info
+     14 4.999621    00:04:5a:7a:c6:6f     00:04:5a:7b:21:cc     ARP      128.143.136.22 is at 00:04:5a:7a:c6:6f
+
+Frame 14 (42 bytes on wire, 42 bytes captured)
+    Arrival Time: Aug  6, 2007 02:30:57.700735000
+    [Time delta from previous packet: 0.000025000 seconds]
+    [Time since reference or first frame: 4.999621000 seconds]
+    Frame Number: 14
+    Packet Length: 42 bytes
+    Capture Length: 42 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f), Dst: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Destination: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        Address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        Address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: ARP (0x0806)
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (0x0001)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (0x0002)
+    Sender MAC address: 00:04:5a:7a:c6:6f (00:04:5a:7a:c6:6f)
+    Sender IP address: 128.143.136.22 (128.143.136.22)
+    Target MAC address: 00:04:5a:7b:21:cc (00:04:5a:7b:21:cc)
+    Target IP address: 128.143.136.1 (128.143.136.1)

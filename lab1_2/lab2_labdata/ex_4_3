@@ -1,0 +1,225 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0      0 *:echo                      *:*                         LISTEN      
+tcp        0      0 *:daytime                   *:*                         LISTEN      
+tcp        0      0 *:sunrpc                    *:*                         LISTEN      
+tcp        0      0 *:ftp                       *:*                         LISTEN      
+tcp        0      0 *:ipp                       *:*                         LISTEN      
+tcp        0      0 *:telnet                    *:*                         LISTEN      
+tcp        0      0 *:ssh                       *:*                         LISTEN      
+tcp        0      0 *:ipp                       *:*                         LISTEN      
+udp        0      0 *:32768                     *:*                                     
+udp        0      0 *:daytime                   *:*                                     
+udp        0      0 *:tftp                      *:*                                     
+udp        0      0 *:5353                      *:*                                     
+udp        0      0 *:sunrpc                    *:*                                     
+udp        0      0 *:ipp                       *:*                                     
+udp        0      0 *:32769                     *:*                                     
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING     25858  /root/tmp/orbit-root/linc-4453-0-1995f77bf2d7c
+unix  2      [ ACC ]     STREAM     LISTENING     6209   /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     10397  @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     25866  /root/tmp/orbit-root/linc-4451-0-57da7b931cd
+unix  2      [ ACC ]     STREAM     LISTENING     9660   /var/run/xdmctl/dmctl-:0/socket
+unix  2      [ ACC ]     STREAM     LISTENING     6554   /var/run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     6808   @/var/run/hald/dbus-sN3OIE2vi4
+unix  2      [ ACC ]     STREAM     LISTENING     10330  /tmp/ksocket-root/kdeinit__0
+unix  2      [ ACC ]     STREAM     LISTENING     10332  /tmp/ksocket-root/kdeinit-:0
+unix  2      [ ACC ]     STREAM     LISTENING     10341  /tmp/.ICE-unix/dcop4840-1181209603
+unix  2      [ ACC ]     STREAM     LISTENING     6805   @/var/run/hald/dbus-ngWuplQLFs
+unix  2      [ ACC ]     STREAM     LISTENING     9311   /var/run/avahi-daemon/socket
+unix  2      [ ]         DGRAM                    2368   @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     10363  /tmp/ksocket-root/klauncherWe5OWb.slave-socket
+unix  2      [ ACC ]     STREAM     LISTENING     10630  /tmp/.ICE-unix/4853
+unix  2      [ ACC ]     STREAM     LISTENING     9356   /tmp/.font-unix/fs-1
+unix  2      [ ]         DGRAM                    6845   @/org/freedesktop/hal/udev_event
+unix  11     [ ]         DGRAM                    6054   /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     9654   /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     10255  @/tmp/dbus-OySjjJPzOO
+unix  2      [ ACC ]     STREAM     LISTENING     9450   /var/run/cups/cups.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9475   /var/run/xdmctl/dmctl/socket
+unix  3      [ ]         STREAM     CONNECTED     27451  /tmp/ksocket-root/klauncherWe5OWb.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     27450  
+unix  3      [ ]         STREAM     CONNECTED     27296  @/var/run/hald/dbus-ngWuplQLFs
+unix  3      [ ]         STREAM     CONNECTED     27295  
+unix  3      [ ]         STREAM     CONNECTED     27017  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     27016  
+unix  3      [ ]         STREAM     CONNECTED     27015  /tmp/ksocket-root/konquerorN3e8ub.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     27014  
+unix  3      [ ]         STREAM     CONNECTED     27010  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     27009  
+unix  3      [ ]         STREAM     CONNECTED     27008  /tmp/ksocket-root/konquerorJnAvLa.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     27007  
+unix  3      [ ]         STREAM     CONNECTED     27003  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     27002  
+unix  3      [ ]         STREAM     CONNECTED     27001  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     27000  
+unix  3      [ ]         STREAM     CONNECTED     26980  /tmp/ksocket-root/konquerortuTIqb.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     26979  
+unix  3      [ ]         STREAM     CONNECTED     26971  /tmp/ksocket-root/konquerorE3KTHb.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     26970  
+unix  3      [ ]         STREAM     CONNECTED     26961  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     26960  
+unix  3      [ ]         STREAM     CONNECTED     26959  @/tmp/dbus-OySjjJPzOO
+unix  3      [ ]         STREAM     CONNECTED     26958  
+unix  3      [ ]         STREAM     CONNECTED     26504  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     26503  
+unix  3      [ ]         STREAM     CONNECTED     26402  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     26401  
+unix  3      [ ]         STREAM     CONNECTED     26390  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     26389  
+unix  3      [ ]         STREAM     CONNECTED     25870  /root/tmp/orbit-root/linc-4451-0-57da7b931cd
+unix  3      [ ]         STREAM     CONNECTED     25869  
+unix  3      [ ]         STREAM     CONNECTED     25868  /root/tmp/orbit-root/linc-4453-0-1995f77bf2d7c
+unix  3      [ ]         STREAM     CONNECTED     25865  
+unix  2      [ ]         DGRAM                    25854  
+unix  3      [ ]         STREAM     CONNECTED     25846  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     25845  
+unix  3      [ ]         STREAM     CONNECTED     25844  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     25843  
+unix  3      [ ]         STREAM     CONNECTED     25842  @/tmp/dbus-OySjjJPzOO
+unix  3      [ ]         STREAM     CONNECTED     25841  
+unix  3      [ ]         STREAM     CONNECTED     25402  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     25401  
+unix  3      [ ]         STREAM     CONNECTED     25397  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     25396  
+unix  3      [ ]         STREAM     CONNECTED     25395  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     25394  
+unix  3      [ ]         STREAM     CONNECTED     25242  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     25241  
+unix  3      [ ]         STREAM     CONNECTED     25228  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     25227  
+unix  3      [ ]         STREAM     CONNECTED     25222  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     25221  
+unix  3      [ ]         STREAM     CONNECTED     25220  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     25219  
+unix  2      [ ]         STREAM     CONNECTED     25212  /tmp/ksocket-root/kdeinit__0
+unix  3      [ ]         STREAM     CONNECTED     24613  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     24612  
+unix  3      [ ]         STREAM     CONNECTED     24611  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24610  
+unix  3      [ ]         STREAM     CONNECTED     24606  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     24605  
+unix  3      [ ]         STREAM     CONNECTED     24034  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     24033  
+unix  3      [ ]         STREAM     CONNECTED     24029  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     24028  
+unix  3      [ ]         STREAM     CONNECTED     24027  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24026  
+unix  3      [ ]         STREAM     CONNECTED     10891  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10890  
+unix  3      [ ]         STREAM     CONNECTED     10855  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10852  
+unix  3      [ ]         STREAM     CONNECTED     10846  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10845  
+unix  3      [ ]         STREAM     CONNECTED     10841  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10840  
+unix  3      [ ]         STREAM     CONNECTED     10853  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10819  
+unix  3      [ ]         STREAM     CONNECTED     10818  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10817  
+unix  3      [ ]         STREAM     CONNECTED     10815  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10814  
+unix  3      [ ]         STREAM     CONNECTED     10806  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10805  
+unix  3      [ ]         STREAM     CONNECTED     10795  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10794  
+unix  3      [ ]         STREAM     CONNECTED     10793  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10792  
+unix  3      [ ]         STREAM     CONNECTED     10790  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10789  
+unix  3      [ ]         STREAM     CONNECTED     10774  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10773  
+unix  3      [ ]         STREAM     CONNECTED     10772  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10771  
+unix  3      [ ]         STREAM     CONNECTED     10769  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10768  
+unix  3      [ ]         STREAM     CONNECTED     10747  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10746  
+unix  3      [ ]         STREAM     CONNECTED     10740  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     10739  
+unix  3      [ ]         STREAM     CONNECTED     10696  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10695  
+unix  3      [ ]         STREAM     CONNECTED     10692  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10691  
+unix  3      [ ]         STREAM     CONNECTED     10687  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10686  
+unix  3      [ ]         STREAM     CONNECTED     10675  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     10674  
+unix  3      [ ]         STREAM     CONNECTED     10661  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10660  
+unix  3      [ ]         STREAM     CONNECTED     10659  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10658  
+unix  3      [ ]         STREAM     CONNECTED     10654  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10653  
+unix  3      [ ]         STREAM     CONNECTED     10646  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10645  
+unix  3      [ ]         STREAM     CONNECTED     10644  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10643  
+unix  3      [ ]         STREAM     CONNECTED     10639  /tmp/.ICE-unix/4853
+unix  3      [ ]         STREAM     CONNECTED     10638  
+unix  3      [ ]         STREAM     CONNECTED     10637  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10636  
+unix  3      [ ]         STREAM     CONNECTED     10629  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10628  
+unix  3      [ ]         STREAM     CONNECTED     10623  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10622  
+unix  3      [ ]         STREAM     CONNECTED     10613  /tmp/ksocket-root/kdeinit__0
+unix  3      [ ]         STREAM     CONNECTED     10612  
+unix  3      [ ]         STREAM     CONNECTED     10601  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     10600  
+unix  3      [ ]         STREAM     CONNECTED     10403  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     10399  
+unix  3      [ ]         STREAM     CONNECTED     10378  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10377  
+unix  3      [ ]         STREAM     CONNECTED     10375  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10374  
+unix  3      [ ]         STREAM     CONNECTED     10366  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10365  
+unix  3      [ ]         STREAM     CONNECTED     10357  /tmp/.ICE-unix/dcop4840-1181209603
+unix  3      [ ]         STREAM     CONNECTED     10356  
+unix  3      [ ]         STREAM     CONNECTED     10352  
+unix  3      [ ]         STREAM     CONNECTED     10351  
+unix  3      [ ]         STREAM     CONNECTED     10276  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     10275  
+unix  3      [ ]         STREAM     CONNECTED     10274  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10273  
+unix  3      [ ]         STREAM     CONNECTED     10259  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     10258  
+unix  3      [ ]         STREAM     CONNECTED     10257  
+unix  3      [ ]         STREAM     CONNECTED     10256  
+unix  2      [ ]         DGRAM                    10185  
+unix  3      [ ]         STREAM     CONNECTED     10161  /tmp/.font-unix/fs-1
+unix  3      [ ]         STREAM     CONNECTED     10160  
+unix  2      [ ]         DGRAM                    9940   
+unix  2      [ ]         DGRAM                    9881   
+unix  7      [ ]         STREAM     CONNECTED     10171  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     9690   
+unix  3      [ ]         STREAM     CONNECTED     9667   /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     9666   
+unix  3      [ ]         STREAM     CONNECTED     9314   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     9313   
+unix  2      [ ]         DGRAM                    9188   
+unix  2      [ ]         DGRAM                    9167   
+unix  2      [ ]         DGRAM                    8012   
+unix  3      [ ]         STREAM     CONNECTED     7943   @/var/run/hald/dbus-ngWuplQLFs
+unix  3      [ ]         STREAM     CONNECTED     7942   
+unix  3      [ ]         STREAM     CONNECTED     7941   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7940   
+unix  2      [ ]         DGRAM                    7865   
+unix  3      [ ]         STREAM     CONNECTED     7654   /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     7653   
+unix  3      [ ]         STREAM     CONNECTED     7610   @/var/run/hald/dbus-ngWuplQLFs
+unix  3      [ ]         STREAM     CONNECTED     7606   
+unix  3      [ ]         STREAM     CONNECTED     7609   @/var/run/hald/dbus-ngWuplQLFs
+unix  3      [ ]         STREAM     CONNECTED     7590   
+unix  3      [ ]         STREAM     CONNECTED     7589   @/var/run/hald/dbus-ngWuplQLFs
+unix  3      [ ]         STREAM     CONNECTED     7518   
+unix  3      [ ]         STREAM     CONNECTED     6817   @/var/run/hald/dbus-sN3OIE2vi4
+unix  3      [ ]         STREAM     CONNECTED     6810   
+unix  3      [ ]         STREAM     CONNECTED     6807   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     6806   
+unix  2      [ ]         DGRAM                    6269   
+unix  3      [ ]         STREAM     CONNECTED     6212   
+unix  3      [ ]         STREAM     CONNECTED     6211   

@@ -1,0 +1,10 @@
+[root@PC2 root]# iptables -t nat -L
+Chain PREROUTING (policy ACCEPT)
+target     prot opt source               destination
+
+Chain POSTROUTING (policy ACCEPT)
+target     prot opt source               destination
+SNAT       all  --  10.0.1.0/24          anywhere            to:128.143.136.22
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination

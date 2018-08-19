@@ -1,0 +1,50 @@
+Exercise 5
+
+5B
+5.1 Observe the number of packets exchanged between the Router 1 and Router 2 for each keystroke. Describe the payload of the packets. Use your knowledge of delayed acknowledgments to explain the sequence of segment transmissions. Explain why you should see 4 packets and explain why you do not see 4 packets per typed character.
+
+Ans: There are 3 packets exchanged for each keystroke. 
+1st packet: the keystroke data packet from client to server.
+2nd packet: PSH, ACK packet sent from server to client. 
+3rd packet: an ACK packet from client to serve. 
+
+We should see 4 packets because there are 2 keystroke data packets. Therefore, 2 acknowledge packets are expected. We did not see 4 packets because the acknowledge of the first packets is piggybacked on the second packet, which can be shown by the PSH, ACK in the header.
+
+5.2. When the TCP client receives the echo of a character, it waits a certain time before sending the ACK. Why does the TCP client delay? How long is this delay? How much does the delay vary?
+
+Ans: The TCP client delays because TCP is waiting for following data so that the ACK can be piggybacked. The delay is 0.00005 seconds and varies by 0.00001 seconds.
+
+5.3. What is the time delay associated with the transmission of ACKs from the Telnet server on Router 2?
+
+Ans: The time delay is 0.0009 seconds.
+
+5.4. Which flags, if any, are set in the TCP segments that carry typed characters as payload? Explain the meaning of these flags.
+
+Ans: The flag PSH, ACK are set. PSH means that the packet contains application data and ACK means the packet contains acknowledgement of previous packet.
+
+5.5. Why do segments that have an empty payload carry a sequence number? Why does this not result in confusion at the TCP receiver?
+
+Ans: The acknowledgement of empty payload packet will not consume any sequence number, which means the same sequence number will be used in next segment repeatedly. Sequence number does not change during the transmission of empty payload segment, which avoid the confusion at TCP receiver.
+.
+5.6. What is the window size that is advertised by the Telnet client and the Telnet server? How does the value of the window size field vary as the connection progresses?
+
+Ans: The client window size is 5840 and the server window size is 5792. The value doesn’t vary as
+the connection progresses.
+
+5.7 Do you observe a difference in the transmission of segment payloads and ACKs?
+
+Ans: Many ACK packets are piggybacked in the next packet.
+
+
+5C
+5.8. Observe the number of packets exchanged between Router1 and Router2 for each keystroke. Observe how the transmission of packets changes when you type characters more quickly. 
+
+Ans: For each keystroke, there are  3 packet exchange. If we typed quickly, one packet will contain multiple keystroke data.
+
+5.9. Do you observe delayed acknowledgments? Why is the outcome expected?
+
+Ans: Yes, we saw the delayed acknowledgments. The outcome is expected because the acknowledgement is piggybacked into next data packet.
+
+5.10. If you type very quickly (i.e., if you hold a key down), you should observe that multiple characters are transmitted in the payload of a segment. Explain this outcome.
+
+Ans: This is the effect of the Nagle's algorithm. After the client send 1 byte data to the server, the following bytes will be buffer and sent as a big segment while receiving the acknowledgement of the 1 byte data. Therefore, we can observe that multiple characters are transmitted in the payload of a segment.

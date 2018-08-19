@@ -1,0 +1,42 @@
+Ip:
+    303 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    303 incoming packets delivered
+    324 requests sent out
+Icmp:
+    151 ICMP messages received
+    3 input ICMP message failed.
+    ICMP input histogram:
+        destination unreachable: 98
+        echo requests: 1
+        echo replies: 52
+    99 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 98
+        echo replies: 1
+Tcp:
+    5 active connections openings
+    0 passive connection openings
+    3 failed connection attempts
+    0 connection resets received
+    0 connections established
+    48 segments received
+    64 segments send out
+    3 segments retransmited
+    0 bad segments received.
+    0 resets sent
+Udp:
+    12 packets received
+    92 packets to unknown port received.
+    0 packet receive errors
+    104 packets sent
+TcpExt:
+    1 TCP sockets finished time wait in fast timer
+    2 delayed acks sent
+    26 packets header predicted
+    1 acknowledgments not containing data received
+    31 predicted acknowledgments
+    0 TCP data loss events
+    3 other TCP timeouts

@@ -1,0 +1,3428 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    00:04:5a:7b:44:94     ff:ff:ff:ff:ff:ff     ARP      Who has 10.0.1.1?  Tell 10.0.1.2
+
+Frame 1 (42 bytes on wire, 42 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.487169000
+    [Time delta from previous packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Packet Length: 42 bytes
+    Capture Length: 42 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: ff:ff:ff:ff:ff:ff (ff:ff:ff:ff:ff:ff)
+    Destination: ff:ff:ff:ff:ff:ff (ff:ff:ff:ff:ff:ff)
+        Address: ff:ff:ff:ff:ff:ff (ff:ff:ff:ff:ff:ff)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: ARP (0x0806)
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (0x0001)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (0x0001)
+    Sender MAC address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Sender IP address: 10.0.1.2 (10.0.1.2)
+    Target MAC address: 00:00:00:00:00:00 (00:00:00:00:00:00)
+    Target IP address: 10.0.1.1 (10.0.1.1)
+
+No.     Time        Source                Destination           Protocol Info
+      2 0.000485    00:1c:58:68:eb:88     00:04:5a:7b:44:94     ARP      10.0.1.1 is at 00:1c:58:68:eb:88
+
+Frame 2 (60 bytes on wire, 60 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.487654000
+    [Time delta from previous packet: 0.000485000 seconds]
+    [Time since reference or first frame: 0.000485000 seconds]
+    Frame Number: 2
+    Packet Length: 60 bytes
+    Capture Length: 60 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: ARP (0x0806)
+    Trailer: 000000000000000000000000000000000000
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (0x0001)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (0x0002)
+    Sender MAC address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Sender IP address: 10.0.1.1 (10.0.1.1)
+    Target MAC address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Target IP address: 10.0.1.2 (10.0.1.2)
+
+No.     Time        Source                Destination           Protocol Info
+      3 0.000507    10.0.1.2              128.143.136.22        TCP      41563 > 21 [SYN] Seq=0 Len=0 MSS=1460 TSV=1713615 TSER=0
+
+Frame 3 (70 bytes on wire, 70 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.487676000
+    [Time delta from previous packet: 0.000022000 seconds]
+    [Time since reference or first frame: 0.000507000 seconds]
+    Frame Number: 3
+    Packet Length: 70 bytes
+    Capture Length: 70 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 56
+    Identification: 0x671e (26398)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbffa [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 0, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 0    (relative sequence number)
+    Header length: 36 bytes
+    Flags: 0x02 (SYN)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...0 .... = Acknowledgment: Not set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..1. = Syn: Set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x38af [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (16 bytes)
+        Maximum segment size: 1460 bytes
+        SACK permitted
+        Timestamps: TSval 1713615, TSecr 0
+
+No.     Time        Source                Destination           Protocol Info
+      4 0.009194    128.143.136.22        10.0.1.2              TCP      21 > 41563 [SYN, ACK] Seq=0 Ack=1 Win=5792 Len=0 MSS=1460 TSV=1699295 TSER=1713615
+
+Frame 4 (70 bytes on wire, 70 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.496363000
+    [Time delta from previous packet: 0.008687000 seconds]
+    [Time since reference or first frame: 0.009194000 seconds]
+    Frame Number: 4
+    Packet Length: 70 bytes
+    Capture Length: 70 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 56
+    Identification: 0x0000 (0)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x2919 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 0, Ack: 1, Len: 0
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 0    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 36 bytes
+    Flags: 0x12 (SYN, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..1. = Syn: Set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0x0096 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (16 bytes)
+        Maximum segment size: 1460 bytes
+        SACK permitted
+        Timestamps: TSval 1699295, TSecr 1713615
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 3]
+        [The RTT to ACK the segment was: 0.008687000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+      5 0.009235    10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=1 Ack=1 Win=5840 Len=0 TSV=1713619 TSER=1699295
+
+Frame 5 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.496404000
+    [Time delta from previous packet: 0.000041000 seconds]
+    [Time since reference or first frame: 0.009235000 seconds]
+    Frame Number: 5
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x671f (26399)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbffd [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 1, Ack: 1, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x1b20 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1713619, TSecr 1699295
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4]
+        [The RTT to ACK the segment was: 0.000041000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+      6 0.012470    128.143.136.22        10.0.1.2              FTP      Response: 220 (vsFTPd 2.0.5)
+
+Frame 6 (86 bytes on wire, 86 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.499639000
+    [Time delta from previous packet: 0.003235000 seconds]
+    [Time since reference or first frame: 0.012470000 seconds]
+    Frame Number: 6
+    Packet Length: 86 bytes
+    Capture Length: 86 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 72
+    Identification: 0xe735 (59189)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41d3 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 1, Ack: 1, Len: 20
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 21    (relative sequence number)]
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xc021 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1699298, TSecr 1713619
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 5]
+        [The RTT to ACK the segment was: 0.003235000 seconds]
+File Transfer Protocol (FTP)
+    220 (vsFTPd 2.0.5)\r\n
+        Response code: Service ready for new user (220)
+        Response arg: (vsFTPd 2.0.5)
+
+No.     Time        Source                Destination           Protocol Info
+      7 0.012531    10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=1 Ack=21 Win=5840 Len=0 TSV=1713620 TSER=1699298
+
+Frame 7 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.499700000
+    [Time delta from previous packet: 0.000061000 seconds]
+    [Time since reference or first frame: 0.012531000 seconds]
+    Frame Number: 7
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6720 (26400)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfec [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 1, Ack: 21, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 21    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x1b08 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1713620, TSecr 1699298
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 6]
+        [The RTT to ACK the segment was: 0.000061000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+      8 0.013021    10.0.1.2              128.143.136.22        FTP      Request: AUTH GSSAPI
+
+Frame 8 (79 bytes on wire, 79 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.500190000
+    [Time delta from previous packet: 0.000490000 seconds]
+    [Time since reference or first frame: 0.013021000 seconds]
+    Frame Number: 8
+    Packet Length: 79 bytes
+    Capture Length: 79 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 65
+    Identification: 0x6721 (26401)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfde [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 1, Ack: 21, Len: 13
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 14    (relative sequence number)]
+    Acknowledgement number: 21    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x7d5d [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1713620, TSecr 1699298
+File Transfer Protocol (FTP)
+    AUTH GSSAPI\r\n
+        Request command: AUTH
+        Request arg: GSSAPI
+
+No.     Time        Source                Destination           Protocol Info
+      9 0.014203    128.143.136.22        10.0.1.2              TCP      21 > 41563 [ACK] Seq=21 Ack=14 Win=5792 Len=0 TSV=1699298 TSER=1713620
+
+Frame 9 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.501372000
+    [Time delta from previous packet: 0.001182000 seconds]
+    [Time since reference or first frame: 0.014203000 seconds]
+    Frame Number: 9
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0xe736 (59190)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41e6 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 21, Ack: 14, Len: 0
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 21    (relative sequence number)
+    Acknowledgement number: 14    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0x1b2b [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1699298, TSecr 1713620
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 8]
+        [The RTT to ACK the segment was: 0.001182000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     10 0.014431    128.143.136.22        10.0.1.2              FTP      Response: 530 Please login with USER and PASS.
+
+Frame 10 (104 bytes on wire, 104 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.501600000
+    [Time delta from previous packet: 0.000228000 seconds]
+    [Time since reference or first frame: 0.014431000 seconds]
+    Frame Number: 10
+    Packet Length: 104 bytes
+    Capture Length: 104 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 90
+    Identification: 0xe737 (59191)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41bf [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 21, Ack: 14, Len: 38
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 21    (relative sequence number)
+    [Next sequence number: 59    (relative sequence number)]
+    Acknowledgement number: 14    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xb5e1 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1699298, TSecr 1713620
+File Transfer Protocol (FTP)
+    530 Please login with USER and PASS.\r\n
+        Response code: Not logged in (530)
+        Response arg: Please login with USER and PASS.
+
+No.     Time        Source                Destination           Protocol Info
+     11 0.055960    10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=14 Ack=59 Win=5840 Len=0 TSV=1713630 TSER=1699298
+
+Frame 11 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:02.543129000
+    [Time delta from previous packet: 0.041529000 seconds]
+    [Time since reference or first frame: 0.055960000 seconds]
+    Frame Number: 11
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6722 (26402)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfea [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 14, Ack: 59, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 14    (relative sequence number)
+    Acknowledgement number: 59    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x1acb [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1713630, TSecr 1699298
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 10]
+        [The RTT to ACK the segment was: 0.041529000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     12 2.028387    10.0.1.2              128.143.136.22        FTP      Request: USER root
+
+Frame 12 (77 bytes on wire, 77 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:04.515556000
+    [Time delta from previous packet: 1.972427000 seconds]
+    [Time since reference or first frame: 2.028387000 seconds]
+    Frame Number: 12
+    Packet Length: 77 bytes
+    Capture Length: 77 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 63
+    Identification: 0x6723 (26403)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfde [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 14, Ack: 59, Len: 11
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 14    (relative sequence number)
+    [Next sequence number: 25    (relative sequence number)]
+    Acknowledgement number: 59    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x7035 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1714124, TSecr 1699298
+File Transfer Protocol (FTP)
+    USER root\r\n
+        Request command: USER
+        Request arg: root
+
+No.     Time        Source                Destination           Protocol Info
+     13 2.029955    128.143.136.22        10.0.1.2              FTP      Response: 331 Please specify the password.
+
+Frame 13 (100 bytes on wire, 100 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:04.517124000
+    [Time delta from previous packet: 0.001568000 seconds]
+    [Time since reference or first frame: 2.029955000 seconds]
+    Frame Number: 13
+    Packet Length: 100 bytes
+    Capture Length: 100 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 86
+    Identification: 0xe738 (59192)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41c2 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 59, Ack: 25, Len: 34
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 59    (relative sequence number)
+    [Next sequence number: 93    (relative sequence number)]
+    Acknowledgement number: 25    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xcfbe [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1699802, TSecr 1714124
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 12]
+        [The RTT to ACK the segment was: 0.001568000 seconds]
+File Transfer Protocol (FTP)
+    331 Please specify the password.\r\n
+        Response code: User name okay, need password (331)
+        Response arg: Please specify the password.
+
+No.     Time        Source                Destination           Protocol Info
+     14 2.031822    10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=25 Ack=93 Win=5840 Len=0 TSV=1714124 TSER=1699802
+
+Frame 14 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:04.518991000
+    [Time delta from previous packet: 0.001867000 seconds]
+    [Time since reference or first frame: 2.031822000 seconds]
+    Frame Number: 14
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6724 (26404)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfe8 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 25, Ack: 93, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 25    (relative sequence number)
+    Acknowledgement number: 93    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x16b8 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1714124, TSecr 1699802
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 13]
+        [The RTT to ACK the segment was: 0.001867000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     15 3.683484    00:1c:58:7d:ff:f0     01:00:0c:cc:cc:cc     CDP      Device ID: Router3  Port ID: FastEthernet0/0  
+
+Frame 15 (342 bytes on wire, 342 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:06.170653000
+    [Time delta from previous packet: 1.651662000 seconds]
+    [Time since reference or first frame: 3.683484000 seconds]
+    Frame Number: 15
+    Packet Length: 342 bytes
+    Capture Length: 342 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:llc:cdp:data]
+    [Coloring Rule Name: Routing]
+    [Coloring Rule String: hsrp || eigrp || ospf || bgp || cdp || vrrp || gvrp || igmp || ismp]
+IEEE 802.3 Ethernet 
+    Destination: 01:00:0c:cc:cc:cc (01:00:0c:cc:cc:cc)
+        Address: 01:00:0c:cc:cc:cc (01:00:0c:cc:cc:cc)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:7d:ff:f0 (00:1c:58:7d:ff:f0)
+        Address: 00:1c:58:7d:ff:f0 (00:1c:58:7d:ff:f0)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Length: 328
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+    IG Bit: Individual
+    SSAP: SNAP (0xaa)
+    CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x03)
+    Organization Code: Cisco (0x00000c)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x7244 [correct]
+        [Good: True]
+        [Bad : False]
+    Device ID: Router3
+        Type: Device ID (0x0001)
+        Length: 11
+        Device ID: Router3
+    Software Version
+        Type: Software version (0x0005)
+        Length: 238
+        Software Version: Cisco IOS Software, 2800 Software (C2800NM-IPBASE-M), Version 12.4(3g), RELEASE SOFTWARE (fc2)
+                          Technical Support: http://www.cisco.com/techsupport
+                          Copyright (c) 1986-2006 by Cisco Systems, Inc.
+                          Compiled Mon 06-Nov-06 02:36 by alnguyen
+    Platform: Cisco 2811
+        Type: Platform (0x0006)
+        Length: 14
+        Platform: Cisco 2811
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.0.1.3
+            Protocol type: NLPID
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP address: 10.0.1.3
+    Port ID: FastEthernet0/0
+        Type: Port ID (0x0003)
+        Length: 19
+        Sent through Interface: FastEthernet0/0
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000029
+            .... .... .... .... .... .... .... ...1 = Is  a Router
+            .... .... .... .... .... .... .... ..0. = Not a Transparent Bridge
+            .... .... .... .... .... .... .... .0.. = Not a Source Route Bridge
+            .... .... .... .... .... .... .... 1... = Is  a Switch
+            .... .... .... .... .... .... ...0 .... = Not a Host
+            .... .... .... .... .... .... ..1. .... = Is  IGMP capable
+            .... .... .... .... .... .... .0.. .... = Not a Repeater
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Duplex: Half
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Half
+
+No.     Time        Source                Destination           Protocol Info
+     16 3.748633    00:1c:58:68:eb:88     01:00:0c:cc:cc:cc     CDP      Device ID: Router2  Port ID: FastEthernet0/0  
+
+Frame 16 (351 bytes on wire, 351 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:06.235802000
+    [Time delta from previous packet: 0.065149000 seconds]
+    [Time since reference or first frame: 3.748633000 seconds]
+    Frame Number: 16
+    Packet Length: 351 bytes
+    Capture Length: 351 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:llc:cdp:data]
+    [Coloring Rule Name: Routing]
+    [Coloring Rule String: hsrp || eigrp || ospf || bgp || cdp || vrrp || gvrp || igmp || ismp]
+IEEE 802.3 Ethernet 
+    Destination: 01:00:0c:cc:cc:cc (01:00:0c:cc:cc:cc)
+        Address: 01:00:0c:cc:cc:cc (01:00:0c:cc:cc:cc)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Length: 337
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+    IG Bit: Individual
+    SSAP: SNAP (0xaa)
+    CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x03)
+    Organization Code: Cisco (0x00000c)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0xbc89 [correct]
+        [Good: True]
+        [Bad : False]
+    Device ID: Router2
+        Type: Device ID (0x0001)
+        Length: 11
+        Device ID: Router2
+    Software Version
+        Type: Software version (0x0005)
+        Length: 238
+        Software Version: Cisco IOS Software, 2800 Software (C2800NM-IPBASE-M), Version 12.4(3g), RELEASE SOFTWARE (fc2)
+                          Technical Support: http://www.cisco.com/techsupport
+                          Copyright (c) 1986-2006 by Cisco Systems, Inc.
+                          Compiled Mon 06-Nov-06 02:36 by alnguyen
+    Platform: Cisco 2811
+        Type: Platform (0x0006)
+        Length: 14
+        Platform: Cisco 2811
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.0.1.1
+            Protocol type: NLPID
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP address: 10.0.1.1
+    Port ID: FastEthernet0/0
+        Type: Port ID (0x0003)
+        Length: 19
+        Sent through Interface: FastEthernet0/0
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000029
+            .... .... .... .... .... .... .... ...1 = Is  a Router
+            .... .... .... .... .... .... .... ..0. = Not a Transparent Bridge
+            .... .... .... .... .... .... .... .0.. = Not a Source Route Bridge
+            .... .... .... .... .... .... .... 1... = Is  a Switch
+            .... .... .... .... .... .... ...0 .... = Not a Host
+            .... .... .... .... .... .... ..1. .... = Is  IGMP capable
+            .... .... .... .... .... .... .0.. .... = Not a Repeater
+    IP Prefixes: 1
+        Type: IP Prefix/Gateway (used for ODR) (0x0007)
+        Length: 9
+        IP Prefix = 128.195.7.0/24
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Duplex: Half
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Half
+
+No.     Time        Source                Destination           Protocol Info
+     17 4.875899    10.0.1.2              128.143.136.22        FTP      Request: PASS rootroot
+
+Frame 17 (81 bytes on wire, 81 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:07.363068000
+    [Time delta from previous packet: 1.127266000 seconds]
+    [Time since reference or first frame: 4.875899000 seconds]
+    Frame Number: 17
+    Packet Length: 81 bytes
+    Capture Length: 81 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 67
+    Identification: 0x6725 (26405)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfd8 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 25, Ack: 93, Len: 15
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 25    (relative sequence number)
+    [Next sequence number: 40    (relative sequence number)]
+    Acknowledgement number: 93    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x7e73 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1714836, TSecr 1699802
+File Transfer Protocol (FTP)
+    PASS rootroot\r\n
+        Request command: PASS
+        Request arg: rootroot
+
+No.     Time        Source                Destination           Protocol Info
+     18 4.881777    128.143.136.22        10.0.1.2              FTP      Response: 230 Login successful.
+
+Frame 18 (89 bytes on wire, 89 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:07.368946000
+    [Time delta from previous packet: 0.005878000 seconds]
+    [Time since reference or first frame: 4.881777000 seconds]
+    Frame Number: 18
+    Packet Length: 89 bytes
+    Capture Length: 89 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 75
+    Identification: 0xe739 (59193)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41cc [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 93, Ack: 40, Len: 23
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 93    (relative sequence number)
+    [Next sequence number: 116    (relative sequence number)]
+    Acknowledgement number: 40    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0x2fb0 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1700515, TSecr 1714836
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 17]
+        [The RTT to ACK the segment was: 0.005878000 seconds]
+File Transfer Protocol (FTP)
+    230 Login successful.\r\n
+        Response code: User logged in, proceed (230)
+        Response arg: Login successful.
+
+No.     Time        Source                Destination           Protocol Info
+     19 4.883481    10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=40 Ack=116 Win=5840 Len=0 TSV=1714837 TSER=1700515
+
+Frame 19 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:07.370650000
+    [Time delta from previous packet: 0.001704000 seconds]
+    [Time since reference or first frame: 4.883481000 seconds]
+    Frame Number: 19
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6726 (26406)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfe6 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 40, Ack: 116, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 40    (relative sequence number)
+    Acknowledgement number: 116    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x1100 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1714837, TSecr 1700515
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 18]
+        [The RTT to ACK the segment was: 0.001704000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     20 4.883548    10.0.1.2              128.143.136.22        FTP      Request: SYST
+
+Frame 20 (72 bytes on wire, 72 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:07.370717000
+    [Time delta from previous packet: 0.000067000 seconds]
+    [Time since reference or first frame: 4.883548000 seconds]
+    Frame Number: 20
+    Packet Length: 72 bytes
+    Capture Length: 72 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 58
+    Identification: 0x6727 (26407)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfdf [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 40, Ack: 116, Len: 6
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 40    (relative sequence number)
+    [Next sequence number: 46    (relative sequence number)]
+    Acknowledgement number: 116    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x5d3a [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1714837, TSecr 1700515
+File Transfer Protocol (FTP)
+    SYST\r\n
+        Request command: SYST
+
+No.     Time        Source                Destination           Protocol Info
+     21 4.885070    128.143.136.22        10.0.1.2              FTP      Response: 215 UNIX Type: L8
+
+Frame 21 (85 bytes on wire, 85 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:07.372239000
+    [Time delta from previous packet: 0.001522000 seconds]
+    [Time since reference or first frame: 4.885070000 seconds]
+    Frame Number: 21
+    Packet Length: 85 bytes
+    Capture Length: 85 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 71
+    Identification: 0xe73a (59194)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41cf [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 116, Ack: 46, Len: 19
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 116    (relative sequence number)
+    [Next sequence number: 135    (relative sequence number)]
+    Acknowledgement number: 46    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xa9bd [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1700516, TSecr 1714837
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 20]
+        [The RTT to ACK the segment was: 0.001522000 seconds]
+File Transfer Protocol (FTP)
+    215 UNIX Type: L8\r\n
+        Response code: NAME system type (215)
+        Response arg: UNIX Type: L8
+
+No.     Time        Source                Destination           Protocol Info
+     22 4.931347    10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=46 Ack=135 Win=5840 Len=0 TSV=1714849 TSER=1700516
+
+Frame 22 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:07.418516000
+    [Time delta from previous packet: 0.046277000 seconds]
+    [Time since reference or first frame: 4.931347000 seconds]
+    Frame Number: 22
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6728 (26408)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfe4 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 46, Ack: 135, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 46    (relative sequence number)
+    Acknowledgement number: 135    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x10da [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1714849, TSecr 1700516
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 21]
+        [The RTT to ACK the segment was: 0.046277000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     23 12.351560   00:1c:58:68:eb:88     ab:00:00:02:00:00     0x6002   DEC DNA Remote Console
+
+Frame 23 (77 bytes on wire, 77 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:14.838729000
+    [Time delta from previous packet: 7.420213000 seconds]
+    [Time since reference or first frame: 12.351560000 seconds]
+    Frame Number: 23
+    Packet Length: 77 bytes
+    Capture Length: 77 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:data]
+    [Coloring Rule Name: Broadcast]
+    [Coloring Rule String: eth[0] & 1]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: ab:00:00:02:00:00 (ab:00:00:02:00:00)
+    Destination: ab:00:00:02:00:00 (ab:00:00:02:00:00)
+        Address: ab:00:00:02:00:00 (ab:00:00:02:00:00)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: DEC DNA Remote Console (0x6002)
+Data (63 bytes)
+
+0000  3d 00 07 00 00 00 01 00 03 03 00 00 02 00 02 21   =..............!
+0010  00 03 00 06 00 00 00 00 00 00 04 00 02 3c 00 05   .............<..
+0020  00 02 d8 05 06 00 02 00 01 07 00 06 00 1c 58 68   ..............Xh
+0030  eb 88 64 00 01 79 90 01 01 01 91 01 02 ee 05      ..d..y.........
+
+No.     Time        Source                Destination           Protocol Info
+     24 21.866739   10.0.1.2              128.143.136.22        FTP      Request: TYPE I
+
+Frame 24 (74 bytes on wire, 74 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.353908000
+    [Time delta from previous packet: 9.515179000 seconds]
+    [Time since reference or first frame: 21.866739000 seconds]
+    Frame Number: 24
+    Packet Length: 74 bytes
+    Capture Length: 74 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 60
+    Identification: 0x6729 (26409)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfdb [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 46, Ack: 135, Len: 8
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 46    (relative sequence number)
+    [Next sequence number: 54    (relative sequence number)]
+    Acknowledgement number: 135    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x2e4d [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719084, TSecr 1700516
+File Transfer Protocol (FTP)
+    TYPE I\r\n
+        Request command: TYPE
+        Request arg: I
+
+No.     Time        Source                Destination           Protocol Info
+     25 21.868221   128.143.136.22        10.0.1.2              FTP      Response: 200 Switching to Binary mode.
+
+Frame 25 (97 bytes on wire, 97 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.355390000
+    [Time delta from previous packet: 0.001482000 seconds]
+    [Time since reference or first frame: 21.868221000 seconds]
+    Frame Number: 25
+    Packet Length: 97 bytes
+    Capture Length: 97 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 83
+    Identification: 0xe73b (59195)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41c2 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 135, Ack: 54, Len: 31
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 135    (relative sequence number)
+    [Next sequence number: 166    (relative sequence number)]
+    Acknowledgement number: 54    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xb9f1 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704762, TSecr 1719084
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 24]
+        [The RTT to ACK the segment was: 0.001482000 seconds]
+File Transfer Protocol (FTP)
+    200 Switching to Binary mode.\r\n
+        Response code: Command okay (200)
+        Response arg: Switching to Binary mode.
+
+No.     Time        Source                Destination           Protocol Info
+     26 21.868255   10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=54 Ack=166 Win=5840 Len=0 TSV=1719084 TSER=1704762
+
+Frame 26 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.355424000
+    [Time delta from previous packet: 0.000034000 seconds]
+    [Time since reference or first frame: 21.868255000 seconds]
+    Frame Number: 26
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x672a (26410)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfe2 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 54, Ack: 166, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 54    (relative sequence number)
+    Acknowledgement number: 166    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xef91 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719084, TSecr 1704762
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 25]
+        [The RTT to ACK the segment was: 0.000034000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     27 21.910963   10.0.1.2              128.143.136.22        FTP      Request: PORT 10,0,1,2,215,153
+
+Frame 27 (89 bytes on wire, 89 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.398132000
+    [Time delta from previous packet: 0.042708000 seconds]
+    [Time since reference or first frame: 21.910963000 seconds]
+    Frame Number: 27
+    Packet Length: 89 bytes
+    Capture Length: 89 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 75
+    Identification: 0x672b (26411)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfca [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 54, Ack: 166, Len: 23
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 54    (relative sequence number)
+    [Next sequence number: 77    (relative sequence number)]
+    Acknowledgement number: 166    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x9342 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719095, TSecr 1704762
+File Transfer Protocol (FTP)
+    PORT 10,0,1,2,215,153\r\n
+        Request command: PORT
+        Request arg: 10,0,1,2,215,153
+        Active IP address: 10.0.1.2 (10.0.1.2)
+        Active port: 55193
+
+No.     Time        Source                Destination           Protocol Info
+     28 21.912365   128.143.136.22        10.0.1.2              FTP      Response: 200 PORT command successful. Consider using PASV.
+
+Frame 28 (117 bytes on wire, 117 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.399534000
+    [Time delta from previous packet: 0.001402000 seconds]
+    [Time since reference or first frame: 21.912365000 seconds]
+    Frame Number: 28
+    Packet Length: 117 bytes
+    Capture Length: 117 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 103
+    Identification: 0xe73c (59196)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41ad [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 166, Ack: 77, Len: 51
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 166    (relative sequence number)
+    [Next sequence number: 217    (relative sequence number)]
+    Acknowledgement number: 77    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0x4434 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704773, TSecr 1719095
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 27]
+        [The RTT to ACK the segment was: 0.001402000 seconds]
+File Transfer Protocol (FTP)
+    200 PORT command successful. Consider using PASV.\r\n
+        Response code: Command okay (200)
+        Response arg: PORT command successful. Consider using PASV.
+
+No.     Time        Source                Destination           Protocol Info
+     29 21.912400   10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=77 Ack=217 Win=5840 Len=0 TSV=1719095 TSER=1704773
+
+Frame 29 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.399569000
+    [Time delta from previous packet: 0.000035000 seconds]
+    [Time since reference or first frame: 21.912400000 seconds]
+    Frame Number: 29
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x672c (26412)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfe0 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 77, Ack: 217, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 77    (relative sequence number)
+    Acknowledgement number: 217    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xef31 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719095, TSecr 1704773
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 28]
+        [The RTT to ACK the segment was: 0.000035000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     30 21.912783   10.0.1.2              128.143.136.22        FTP      Request: RETR labdata
+
+Frame 30 (80 bytes on wire, 80 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.399952000
+    [Time delta from previous packet: 0.000383000 seconds]
+    [Time since reference or first frame: 21.912783000 seconds]
+    Frame Number: 30
+    Packet Length: 80 bytes
+    Capture Length: 80 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 66
+    Identification: 0x672d (26413)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfd1 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 77, Ack: 217, Len: 14
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 77    (relative sequence number)
+    [Next sequence number: 91    (relative sequence number)]
+    Acknowledgement number: 217    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xe0e8 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719095, TSecr 1704773
+File Transfer Protocol (FTP)
+    RETR labdata\r\n
+        Request command: RETR
+        Request arg: labdata
+
+No.     Time        Source                Destination           Protocol Info
+     31 21.914114   128.143.136.22        10.0.1.2              TCP      20 > 55193 [SYN] Seq=0 Len=0 MSS=1460 TSV=1704774 TSER=0
+
+Frame 31 (70 bytes on wire, 70 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.401283000
+    [Time delta from previous packet: 0.001331000 seconds]
+    [Time since reference or first frame: 21.914114000 seconds]
+    Frame Number: 31
+    Packet Length: 70 bytes
+    Capture Length: 70 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 56
+    Identification: 0x8d6f (36207)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x9ba9 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 20 (20), Dst Port: 55193 (55193), Seq: 0, Len: 0
+    Source port: 20 (20)
+    Destination port: 55193 (55193)
+    Sequence number: 0    (relative sequence number)
+    Header length: 36 bytes
+    Flags: 0x02 (SYN)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...0 .... = Acknowledgment: Not set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..1. = Syn: Set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x87ba [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (16 bytes)
+        Maximum segment size: 1460 bytes
+        SACK permitted
+        Timestamps: TSval 1704774, TSecr 0
+
+No.     Time        Source                Destination           Protocol Info
+     32 21.914138   10.0.1.2              128.143.136.22        TCP      55193 > 20 [SYN, ACK] Seq=0 Ack=1 Win=5792 Len=0 MSS=1460 TSV=1719096 TSER=1704774
+
+Frame 32 (70 bytes on wire, 70 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.401307000
+    [Time delta from previous packet: 0.000024000 seconds]
+    [Time since reference or first frame: 21.914138000 seconds]
+    Frame Number: 32
+    Packet Length: 70 bytes
+    Capture Length: 70 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 56
+    Identification: 0x0000 (0)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0x2719 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 55193 (55193), Dst Port: 20 (20), Seq: 0, Ack: 1, Len: 0
+    Source port: 55193 (55193)
+    Destination port: 20 (20)
+    Sequence number: 0    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 36 bytes
+    Flags: 0x12 (SYN, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..1. = Syn: Set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xe3ea [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (16 bytes)
+        Maximum segment size: 1460 bytes
+        SACK permitted
+        Timestamps: TSval 1719096, TSecr 1704774
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 31]
+        [The RTT to ACK the segment was: 0.000024000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     33 21.914479   128.143.136.22        10.0.1.2              TCP      20 > 55193 [ACK] Seq=1 Ack=1 Win=5840 Len=0 TSV=1704774 TSER=1719096
+
+Frame 33 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.401648000
+    [Time delta from previous packet: 0.000341000 seconds]
+    [Time since reference or first frame: 21.914479000 seconds]
+    Frame Number: 33
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x8d70 (36208)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x9bac [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 20 (20), Dst Port: 55193 (55193), Seq: 1, Ack: 1, Len: 0
+    Source port: 20 (20)
+    Destination port: 55193 (55193)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xfe78 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704774, TSecr 1719096
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 32]
+        [The RTT to ACK the segment was: 0.000341000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     34 21.914704   128.143.136.22        10.0.1.2              FTP-DATA FTP Data: 66 bytes
+
+Frame 34 (132 bytes on wire, 132 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.401873000
+    [Time delta from previous packet: 0.000225000 seconds]
+    [Time since reference or first frame: 21.914704000 seconds]
+    Frame Number: 34
+    Packet Length: 132 bytes
+    Capture Length: 132 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp-data]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x08 (DSCP 0x02: Unknown DSCP; ECN: 0x00)
+        0000 10.. = Differentiated Services Codepoint: Unknown (0x02)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 118
+    Identification: 0x8d71 (36209)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x9b61 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 20 (20), Dst Port: 55193 (55193), Seq: 1, Ack: 1, Len: 66
+    Source port: 20 (20)
+    Destination port: 55193 (55193)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 67    (relative sequence number)]
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x70f8 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704774, TSecr 1719096
+FTP Data
+    FTP Data: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n
+
+No.     Time        Source                Destination           Protocol Info
+     35 21.914726   10.0.1.2              128.143.136.22        TCP      55193 > 20 [ACK] Seq=1 Ack=67 Win=5792 Len=0 TSV=1719096 TSER=1704774
+
+Frame 35 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.401895000
+    [Time delta from previous packet: 0.000022000 seconds]
+    [Time since reference or first frame: 21.914726000 seconds]
+    Frame Number: 35
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x4171 (16753)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xe5ab [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 55193 (55193), Dst Port: 20 (20), Seq: 1, Ack: 67, Len: 0
+    Source port: 55193 (55193)
+    Destination port: 20 (20)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 67    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xfe66 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719096, TSecr 1704774
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 34]
+        [The RTT to ACK the segment was: 0.000022000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     36 21.914736   128.143.136.22        10.0.1.2              TCP      20 > 55193 [FIN, ACK] Seq=67 Ack=1 Win=5840 Len=0 TSV=1704774 TSER=1719096
+
+Frame 36 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.401905000
+    [Time delta from previous packet: 0.000010000 seconds]
+    [Time since reference or first frame: 21.914736000 seconds]
+    Frame Number: 36
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x08 (DSCP 0x02: Unknown DSCP; ECN: 0x00)
+        0000 10.. = Differentiated Services Codepoint: Unknown (0x02)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x8d72 (36210)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x9ba2 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 20 (20), Dst Port: 55193 (55193), Seq: 67, Ack: 1, Len: 0
+    Source port: 20 (20)
+    Destination port: 55193 (55193)
+    Sequence number: 67    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x11 (FIN, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...1 = Fin: Set
+    Window size: 5840
+    Checksum: 0xfe35 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704774, TSecr 1719096
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 35]
+        [The RTT to ACK the segment was: 0.000010000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     37 21.915221   128.143.136.22        10.0.1.2              FTP      Response: 150 Opening BINARY mode data connection for labdata (66 bytes).
+
+Frame 37 (131 bytes on wire, 131 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.402390000
+    [Time delta from previous packet: 0.000485000 seconds]
+    [Time since reference or first frame: 21.915221000 seconds]
+    Frame Number: 37
+    Packet Length: 131 bytes
+    Capture Length: 131 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 117
+    Identification: 0xe73d (59197)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x419e [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 217, Ack: 91, Len: 65
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 217    (relative sequence number)
+    [Next sequence number: 282    (relative sequence number)]
+    Acknowledgement number: 91    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xd41c [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704774, TSecr 1719095
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 30]
+        [The RTT to ACK the segment was: 0.002438000 seconds]
+File Transfer Protocol (FTP)
+    150 Opening BINARY mode data connection for labdata (66 bytes).\r\n
+        Response code: File status okay; about to open data connection (150)
+        Response arg: Opening BINARY mode data connection for labdata (66 bytes).
+
+No.     Time        Source                Destination           Protocol Info
+     38 21.915674   10.0.1.2              128.143.136.22        TCP      55193 > 20 [FIN, ACK] Seq=1 Ack=68 Win=5792 Len=0 TSV=1719096 TSER=1704774
+
+Frame 38 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.402843000
+    [Time delta from previous packet: 0.000453000 seconds]
+    [Time since reference or first frame: 21.915674000 seconds]
+    Frame Number: 38
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x08 (DSCP 0x02: Unknown DSCP; ECN: 0x00)
+        0000 10.. = Differentiated Services Codepoint: Unknown (0x02)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x4172 (16754)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xe5a2 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 55193 (55193), Dst Port: 20 (20), Seq: 1, Ack: 68, Len: 0
+    Source port: 55193 (55193)
+    Destination port: 20 (20)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 68    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x11 (FIN, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...1 = Fin: Set
+    Window size: 5792
+    Checksum: 0xfe64 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719096, TSecr 1704774
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 36]
+        [The RTT to ACK the segment was: 0.000938000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     39 21.916039   128.143.136.22        10.0.1.2              TCP      20 > 55193 [ACK] Seq=68 Ack=2 Win=5840 Len=0 TSV=1704774 TSER=1719096
+
+Frame 39 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.403208000
+    [Time delta from previous packet: 0.000365000 seconds]
+    [Time since reference or first frame: 21.916039000 seconds]
+    Frame Number: 39
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x08 (DSCP 0x02: Unknown DSCP; ECN: 0x00)
+        0000 10.. = Differentiated Services Codepoint: Unknown (0x02)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x8d73 (36211)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x9ba1 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 20 (20), Dst Port: 55193 (55193), Seq: 68, Ack: 2, Len: 0
+    Source port: 20 (20)
+    Destination port: 55193 (55193)
+    Sequence number: 68    (relative sequence number)
+    Acknowledgement number: 2    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xfe34 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704774, TSecr 1719096
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 38]
+        [The RTT to ACK the segment was: 0.000365000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     40 21.916565   128.143.136.22        10.0.1.2              FTP      Response: 226 File send OK.
+
+Frame 40 (85 bytes on wire, 85 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.403734000
+    [Time delta from previous packet: 0.000526000 seconds]
+    [Time since reference or first frame: 21.916565000 seconds]
+    Frame Number: 40
+    Packet Length: 85 bytes
+    Capture Length: 85 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 71
+    Identification: 0xe73e (59198)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41cb [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 282, Ack: 91, Len: 19
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 282    (relative sequence number)
+    [Next sequence number: 301    (relative sequence number)]
+    Acknowledgement number: 91    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0x627b [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1704774, TSecr 1719095
+File Transfer Protocol (FTP)
+    226 File send OK.\r\n
+        Response code: Closing data connection (226)
+        Response arg: File send OK.
+
+No.     Time        Source                Destination           Protocol Info
+     41 21.957211   10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=91 Ack=301 Win=5840 Len=0 TSV=1719106 TSER=1704774
+
+Frame 41 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:24.444380000
+    [Time delta from previous packet: 0.040646000 seconds]
+    [Time since reference or first frame: 21.957211000 seconds]
+    Frame Number: 41
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x672e (26414)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfde [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 91, Ack: 301, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 91    (relative sequence number)
+    Acknowledgement number: 301    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xeec3 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719106, TSecr 1704774
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 40]
+        [The RTT to ACK the segment was: 0.040646000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     42 23.834125   10.0.1.2              128.143.136.22        FTP      Request: QUIT
+
+Frame 42 (72 bytes on wire, 72 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.321294000
+    [Time delta from previous packet: 1.876914000 seconds]
+    [Time since reference or first frame: 23.834125000 seconds]
+    Frame Number: 42
+    Packet Length: 72 bytes
+    Capture Length: 72 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 58
+    Identification: 0x672f (26415)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfd7 [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 91, Ack: 301, Len: 6
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 91    (relative sequence number)
+    [Next sequence number: 97    (relative sequence number)]
+    Acknowledgement number: 301    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0x452c [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719576, TSecr 1704774
+File Transfer Protocol (FTP)
+    QUIT\r\n
+        Request command: QUIT
+
+No.     Time        Source                Destination           Protocol Info
+     43 23.835686   128.143.136.22        10.0.1.2              FTP      Response: 221 Goodbye.
+
+Frame 43 (80 bytes on wire, 80 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.322855000
+    [Time delta from previous packet: 0.001561000 seconds]
+    [Time since reference or first frame: 23.835686000 seconds]
+    Frame Number: 43
+    Packet Length: 80 bytes
+    Capture Length: 80 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp:ftp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 66
+    Identification: 0xe73f (59199)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41cf [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 301, Ack: 97, Len: 14
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 301    (relative sequence number)
+    [Next sequence number: 315    (relative sequence number)]
+    Acknowledgement number: 97    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x18 (PSH, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 1... = Push: Set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xfc49 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1705254, TSecr 1719576
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 42]
+        [The RTT to ACK the segment was: 0.001561000 seconds]
+File Transfer Protocol (FTP)
+    221 Goodbye.\r\n
+        Response code: Service closing control connection (221)
+        Response arg: Goodbye.
+
+No.     Time        Source                Destination           Protocol Info
+     44 23.835718   10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=97 Ack=315 Win=5840 Len=0 TSV=1719576 TSER=1705254
+
+Frame 44 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.322887000
+    [Time delta from previous packet: 0.000032000 seconds]
+    [Time since reference or first frame: 23.835718000 seconds]
+    Frame Number: 44
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6730 (26416)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfdc [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 97, Ack: 315, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 97    (relative sequence number)
+    Acknowledgement number: 315    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xeaf9 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719576, TSecr 1705254
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 43]
+        [The RTT to ACK the segment was: 0.000032000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     45 23.836181   128.143.136.22        10.0.1.2              TCP      21 > 41563 [FIN, ACK] Seq=315 Ack=97 Win=5792 Len=0 TSV=1705254 TSER=1719576
+
+Frame 45 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.323350000
+    [Time delta from previous packet: 0.000463000 seconds]
+    [Time since reference or first frame: 23.836181000 seconds]
+    Frame Number: 45
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00)
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0xe740 (59200)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x41dc [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 315, Ack: 97, Len: 0
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 315    (relative sequence number)
+    Acknowledgement number: 97    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x11 (FIN, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...1 = Fin: Set
+    Window size: 5792
+    Checksum: 0xeb28 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1705254, TSecr 1719576
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 44]
+        [The RTT to ACK the segment was: 0.000463000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     46 23.876971   10.0.1.2              128.143.136.22        TCP      41563 > 21 [ACK] Seq=97 Ack=316 Win=5840 Len=0 TSV=1719586 TSER=1705254
+
+Frame 46 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.364140000
+    [Time delta from previous packet: 0.040790000 seconds]
+    [Time since reference or first frame: 23.876971000 seconds]
+    Frame Number: 46
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6731 (26417)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfdb [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 97, Ack: 316, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 97    (relative sequence number)
+    Acknowledgement number: 316    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5840
+    Checksum: 0xeaee [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719586, TSecr 1705254
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 45]
+        [The RTT to ACK the segment was: 0.040790000 seconds]
+
+No.     Time        Source                Destination           Protocol Info
+     47 23.904324   10.0.1.2              128.143.136.22        TCP      41563 > 21 [FIN, ACK] Seq=97 Ack=316 Win=5840 Len=0 TSV=1719593 TSER=1705254
+
+Frame 47 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.391493000
+    [Time delta from previous packet: 0.027353000 seconds]
+    [Time since reference or first frame: 23.904324000 seconds]
+    Frame Number: 47
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP SYN/FIN]
+    [Coloring Rule String: tcp.flags & 0x02 || tcp.flags.fin == 1]
+Ethernet II, Src: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94), Dst: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+    Destination: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 10.0.1.2 (10.0.1.2), Dst: 128.143.136.22 (128.143.136.22)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x6732 (26418)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (0x06)
+    Header checksum: 0xbfda [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 10.0.1.2 (10.0.1.2)
+    Destination: 128.143.136.22 (128.143.136.22)
+Transmission Control Protocol, Src Port: 41563 (41563), Dst Port: 21 (21), Seq: 97, Ack: 316, Len: 0
+    Source port: 41563 (41563)
+    Destination port: 21 (21)
+    Sequence number: 97    (relative sequence number)
+    Acknowledgement number: 316    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x11 (FIN, ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...1 = Fin: Set
+    Window size: 5840
+    Checksum: 0xeae6 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1719593, TSecr 1705254
+
+No.     Time        Source                Destination           Protocol Info
+     48 23.905526   128.143.136.22        10.0.1.2              TCP      21 > 41563 [ACK] Seq=316 Ack=98 Win=5792 Len=0 TSV=1705271 TSER=1719593
+
+Frame 48 (66 bytes on wire, 66 bytes captured)
+    Arrival Time: Aug  6, 2007 02:27:26.392695000
+    [Time delta from previous packet: 0.001202000 seconds]
+    [Time since reference or first frame: 23.905526000 seconds]
+    Frame Number: 48
+    Packet Length: 66 bytes
+    Capture Length: 66 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88), Dst: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+    Destination: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        Address: 00:04:5a:7b:44:94 (00:04:5a:7b:44:94)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        Address: 00:1c:58:68:eb:88 (00:1c:58:68:eb:88)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 128.143.136.22 (128.143.136.22), Dst: 10.0.1.2 (10.0.1.2)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x10 (DSCP 0x04: Unknown DSCP; ECN: 0x00)
+        0001 00.. = Differentiated Services Codepoint: Unknown (0x04)
+        .... ..0. = ECN-Capable Transport (ECT): 0
+        .... ...0 = ECN-CE: 0
+    Total Length: 52
+    Identification: 0x0000 (0)
+    Flags: 0x04 (Don't Fragment)
+        0... = Reserved bit: Not set
+        .1.. = Don't fragment: Set
+        ..0. = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 62
+    Protocol: TCP (0x06)
+    Header checksum: 0x290d [correct]
+        [Good: True]
+        [Bad : False]
+    Source: 128.143.136.22 (128.143.136.22)
+    Destination: 10.0.1.2 (10.0.1.2)
+Transmission Control Protocol, Src Port: 21 (21), Dst Port: 41563 (41563), Seq: 316, Ack: 98, Len: 0
+    Source port: 21 (21)
+    Destination port: 41563 (41563)
+    Sequence number: 316    (relative sequence number)
+    Acknowledgement number: 98    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x10 (ACK)
+        0... .... = Congestion Window Reduced (CWR): Not set
+        .0.. .... = ECN-Echo: Not set
+        ..0. .... = Urgent: Not set
+        ...1 .... = Acknowledgment: Set
+        .... 0... = Push: Not set
+        .... .0.. = Reset: Not set
+        .... ..0. = Syn: Not set
+        .... ...0 = Fin: Not set
+    Window size: 5792
+    Checksum: 0xeb05 [correct]
+        [Good Checksum: True]
+        [Bad Checksum: False]
+    Options: (12 bytes)
+        NOP
+        NOP
+        Timestamps: TSval 1705271, TSecr 1719593
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 47]
+        [The RTT to ACK the segment was: 0.001202000 seconds]

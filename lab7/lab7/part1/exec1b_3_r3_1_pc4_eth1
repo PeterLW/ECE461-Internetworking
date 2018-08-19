@@ -1,0 +1,65 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    00:1c:58:68:eb:89     00:1c:58:68:eb:89     LOOP     Reply
+
+Frame 1 (60 bytes on wire, 60 bytes captured)
+    Arrival Time: Aug  6, 2007 01:10:15.355482000
+    [Time delta from previous packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Packet Length: 60 bytes
+    Capture Length: 60 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:loop:data]
+Ethernet II, Src: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89), Dst: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+    Destination: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        Address: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        Address: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: Loopback (0x9000)
+Configuration Test Protocol (loopback)
+    skipCount: 0
+    Relevant function:
+    Function: Reply (1)
+    Receipt number: 0
+Data (40 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00                           ........
+
+No.     Time        Source                Destination           Protocol Info
+      2 9.999478    00:1c:58:68:eb:89     00:1c:58:68:eb:89     LOOP     Reply
+
+Frame 2 (60 bytes on wire, 60 bytes captured)
+    Arrival Time: Aug  6, 2007 01:10:25.354960000
+    [Time delta from previous packet: 9.999478000 seconds]
+    [Time since reference or first frame: 9.999478000 seconds]
+    Frame Number: 2
+    Packet Length: 60 bytes
+    Capture Length: 60 bytes
+    [Frame is marked: False]
+    [Protocols in frame: eth:loop:data]
+Ethernet II, Src: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89), Dst: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+    Destination: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        Address: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        Address: 00:1c:58:68:eb:89 (00:1c:58:68:eb:89)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: Loopback (0x9000)
+Configuration Test Protocol (loopback)
+    skipCount: 0
+    Relevant function:
+    Function: Reply (1)
+    Receipt number: 0
+Data (40 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00                           ........
